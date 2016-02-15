@@ -31,9 +31,8 @@ body {
   height: 100%;
   min-height: 100%;
   background: #000;
-  overflow: hidden;
+  overflow: scroll;
 }
-
 
 .holder {
   @include holder(relative, 100%, 30%, 5px solid $black, 0 0 30px rgba(0,0,0,1), .5, all .45s)
