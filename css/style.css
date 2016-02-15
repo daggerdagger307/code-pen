@@ -73,7 +73,7 @@ body {
   box-shadow: 0 0 30px black;
   transition: all 0.45s;
   z-inde: 1;
-  border: 5px solid #000;
+  border: 5px solid #08273D;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -83,7 +83,7 @@ body {
   height: 100%;
   z-index: 50;
   opacity: 1;
-  border: 10px solid #000;
+  border: 10px solid #08273D;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -99,8 +99,8 @@ body {
   left: 0;
   bottom: 0;
   font-size: 12px;
-  color: #fff;
-  background: #000;
+  color: #EDE5D5;
+  background: #08273D;
   opacity: 0;
   padding: 10px;
   transition: opacity 1s ease;
@@ -159,7 +159,7 @@ div:nth-of-type(9) {
 /* hovering */
 div:nth-of-type(5):hover {
   left: 25%;
-  top: 25%;
+  top: 0%;
 }
 
 div:nth-of-type(8):hover,
@@ -169,7 +169,7 @@ div:nth-of-type(2):hover {
 
 div:nth-of-type(4):hover,
 div:nth-of-type(6):hover {
-  top: 25%;
+  top: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */
