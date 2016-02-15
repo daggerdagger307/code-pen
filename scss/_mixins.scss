@@ -27,11 +27,41 @@ To use a mixin with arguments
     
     &:hover{
     width: 60%;
-    height: 60%;
+    height: 100%;
     z-index: 50;
     opacity: 1;
     border: 10px solid $black;
     box-shadow: 0 0 30px rgba(0,0,0,.15); 
+        
     }
 }
+
+@mixin span ($size, $color, $background, $opacity, $time){
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: $size;
+    color: $color;
+    background: $background;
+    opacity: $opacity;
+    padding: 10px;
+    transition: $time;
+    
+    &:hover{
+    opacity: .85;
+    }
+}
+
+@mixin holder-img ($width, $height){
+    width: $width;
+    min-height: $height;
+}
+
+
+
+
+
+
 
