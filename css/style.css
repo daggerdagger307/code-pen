@@ -82,4 +82,127 @@ body {
           filter: drop-shadow(-10px 10px 6px rgba(0, 0, 0, 0.3));
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+div {
+  position: absolute;
+  width: 33.333333333%;
+  height: 33.333333333%;
+  opacity: .5;
+  overflow: hidden;
+  box-shadow: 0 0 30px black;
+  transition: all .45s;
+  z-inde: 1;
+  border: 5px solid #000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+div img {
+  width: 100%;
+  min-height: 100%;
+}
+
+div span {
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 12px;
+  color: #fff;
+  background: #000;
+  opacity: 0;
+  padding: 10px;
+  transition: opacity 1s ease;
+}
+
+/* position */
+div:nth-of-type(1) {
+  left: 0;
+  top: 0;
+}
+
+div:nth-of-type(2) {
+  left: 33.333333333%;
+  top: 0;
+}
+
+div:nth-of-type(3) {
+  right: 0;
+  top: 0;
+}
+
+div:nth-of-type(4) {
+  left: 0;
+  top: 33.333333333%;
+}
+
+div:nth-of-type(5) {
+  left: 33.333333333%;
+  top: 33.333333333%;
+}
+
+div:nth-of-type(6) {
+  right: 0;
+  top: 33.333333333%;
+}
+
+div:nth-of-type(7) {
+  left: 0;
+  bottom: 0;
+}
+
+div:nth-of-type(8) {
+  left: 33.333333333%;
+  bottom: 0;
+}
+
+div:nth-of-type(9) {
+  right: 0;
+  bottom: 0;
+}
+
+/* hovering */
+div:hover {
+  width: 60%;
+  height: 60%;
+  z-index: 50;
+  opacity: 1;
+  border: 10px solid #000;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+div:hover span {
+  opacity: .85;
+}
+
+div:nth-of-type(5):hover {
+  left: 25%;
+  top: 25%;
+}
+
+div:nth-of-type(8):hover,
+div:nth-of-type(2):hover {
+  left: 25%;
+}
+
+div:nth-of-type(4):hover,
+div:nth-of-type(6):hover {
+  top: 25%;
+}
+
 /*# sourceMappingURL=style.css.map */
