@@ -19,17 +19,6 @@ body {
     margin: 0;
 }
 
-.icon-otd-logo {
-    vertical-align: middle;
-    padding-top: .3em;
-    padding-right: .5em;
-    font-size: 2em;
-}
-
-.btn {
-    @include fade($grey, 60px, bold, $white, 1s)
-}
-
 * {
   box-sizing: border-box;
 }
@@ -46,17 +35,9 @@ body {
 }
 
 .holder {
-  position: absolute;
-  width: 33.333333333%;
-  height: 33.333333333%;
-  opacity: .5;
-  overflow: hidden;
-  box-shadow: 0 0 30px rgba(0,0,0,1);
-  transition: all .45s;
-  z-inde: 1;
-  border: 5px solid #000;
-  backface-visibility: hidden;
+  @include holder(5px solid $black, 0 0 30px rgba(0,0,0,1), .5, all .45s)
 }
+
 
 div img{
   width: 100%;
@@ -124,14 +105,6 @@ div:nth-of-type(9) {
 }
 
 /* hovering */
-div:hover {
-  width: 60%;
-  height: 60%;
-  z-index: 50;
-  opacity: 1;
-  border: 10px solid #000;
-  box-shadow: 0 0 30px rgba(0,0,0,.15);
-}
 
 div:hover span {
   opacity: .85;

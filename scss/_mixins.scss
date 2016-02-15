@@ -13,28 +13,25 @@ To use a mixin with arguments
 
 */
 
-@mixin fade ($background, $size, $weight, $color, $time){
-    display: block;
-    font-size: $size;
-    font-weight: $weight;
-    margin: 0 auto;
-    position: relative;
-    text-decoration: none;
-    width: 100%;
-    text-align: center;
-    transition: $time;
-    padding: 3em;
-    background-color: $background;
-    font-style: italic;
-    color: $color;
-    letter-spacing: 0;
+@mixin holder ($border, $shadow, $opacity, $time){
+  position: absolute;
+  width: 33.333333333%;
+  height: 33.333333333%;
+  opacity: $opacity;
+  overflow: hidden;
+  box-shadow: $shadow;
+  transition: $time;
+  z-inde: 1;
+  border: $border;
+  backface-visibility: hidden;
     
-    &:hover {
-    color: $darkgrey;
-    letter-spacing: 5px;  
-    background: $darkgrey; 
-    background: radial-gradient(rgba(255,255,255,1), rgba(128,128,128,0));
-
-    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.3));      
+    &:hover{
+    width: 60%;
+    height: 60%;
+    z-index: 50;
+    opacity: 1;
+    border: 10px solid $black;
+    box-shadow: 0 0 30px rgba(0,0,0,.15); 
     }
 }
+
