@@ -97,7 +97,7 @@ body {
   overflow: hidden;
 }
 
-div {
+.holder {
   position: absolute;
   width: 33.333333333%;
   height: 33.333333333%;
