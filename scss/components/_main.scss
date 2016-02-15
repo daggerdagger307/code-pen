@@ -34,6 +34,11 @@ body {
   overflow: scroll;
 }
 
+header {
+    padding: 2em;
+    position: relative;
+}
+
 .holder {
   @include holder(relative, 100%, 30%, 5px solid $black, 0 0 30px rgba(0,0,0,1), .5, all .45s)
 }
@@ -114,7 +119,7 @@ div:nth-of-type(6):hover{
   top: 0%;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 60em) {
 
 .holder {
   @include holder(absolute, 33.33%, 33.33%, 5px solid $black, 0 0 30px rgba(0,0,0,1), .5, all .45s)
