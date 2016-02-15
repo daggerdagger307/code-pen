@@ -34,8 +34,9 @@ body {
   overflow: hidden;
 }
 
+
 .holder {
-  @include holder(5px solid $black, 0 0 30px rgba(0,0,0,1), .5, all .45s)
+  @include holder(relative, 100%, 30%, 5px solid $black, 0 0 30px rgba(0,0,0,1), .5, all .45s)
 }
 
 .holder img {
@@ -47,6 +48,75 @@ body {
 }
 
 /* position */
+div:nth-of-type(1) {
+  left: 0;
+  top: 0;
+}
+
+div:nth-of-type(2) {
+  left: 0;
+  top: 0;
+}
+
+div:nth-of-type(3) {
+  right: 0;
+  top: 0;
+}
+
+div:nth-of-type(4) {
+  left: 0;
+  top: 33.333333333%;
+}
+
+div:nth-of-type(5) {
+  left: 0;
+  top: 33.333333333%;
+}
+
+div:nth-of-type(6) {
+  right: 0;
+  top: 33.333333333%;
+}
+
+div:nth-of-type(7) {
+  left: 0;
+  bottom: 0;
+}
+
+div:nth-of-type(8) {
+  left: 0;
+  bottom: 0;
+}
+
+div:nth-of-type(9) {
+  right: 0;
+  bottom: 0;
+}
+
+/* hovering */
+
+div:nth-of-type(5):hover {
+  left: 25%;
+  top: 0%;
+}
+
+div:nth-of-type(8):hover,
+div:nth-of-type(2):hover{
+  left: 25%;
+}
+
+div:nth-of-type(4):hover,
+div:nth-of-type(6):hover{
+  top: 0%;
+}
+
+@media only screen and (min-width: 38em) {
+
+.holder {
+  @include holder(absolute, 33.33%, 33.33%, 5px solid $black, 0 0 30px rgba(0,0,0,1), .5, all .45s)
+}
+    
+    /* position */
 div:nth-of-type(1) {
   left: 0;
   top: 0;
@@ -108,3 +178,25 @@ div:nth-of-type(4):hover,
 div:nth-of-type(6):hover{
   top: 0%;
 }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,10 +13,10 @@ To use a mixin with arguments
 
 */
 
-@mixin holder ($border, $shadow, $opacity, $time){
-  position: absolute;
-  width: 33.333333333%;
-  height: 33.333333333%;
+@mixin holder ($position, $width, $height, $border, $shadow, $opacity, $time){
+  position: $position;
+  width: $width;
+  height: $height;
   opacity: $opacity;
   overflow: hidden;
   box-shadow: $shadow;
@@ -58,6 +58,8 @@ To use a mixin with arguments
     width: $width;
     min-height: $height;
 }
+
+
 
 
 
