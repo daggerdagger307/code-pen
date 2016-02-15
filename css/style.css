@@ -23,6 +23,7 @@ To use a mixin with arguments
 @include($arguments, $argument2, $argument3)
 
 */
+/*     http://codepen.io/sethabbott/pen/oJAds   */
 @-ms-viewport {
   width: device-width;
   scale: 1;
